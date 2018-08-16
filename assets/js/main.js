@@ -1,8 +1,19 @@
+  /*$('.testi-slick').slick({
+	   slidesToShow: 1,
+	   slidesToScroll: 1,
+	   arrows: true,
+	   fade: true,
+	 });
+	 
+	 */
+
+
 (function ($) {
 	"use strict";
 
     jQuery(document).ready(function($){
-      
+		
+		
 
 			//active
 
@@ -267,7 +278,45 @@
 
     });
 
-
+		
+		
+	  
+	  $('.testi-slick').slick({
+          infinite: true,
+          dots: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          nextArrow: $('.testi-nav-right'),
+          prevArrow: $('.testi-nav-left'),
+           responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 668,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+          ]
+        });
+	  
+	  
+	  
      // preloader
             $(window).on('load', function() {
                 $('.preloader.loading').fadeOut(2000);

@@ -662,7 +662,7 @@ section.insight .overlay {
 	padding:15px;
 	background:#fff;
 }
-.pricing-sec   .carousel-control{
+.pricing-sec   .carousel-control, .btn-round{
 	width:44px;
 	height:44px;
 	border-radius:50%;	
@@ -674,10 +674,10 @@ section.insight .overlay {
     margin: auto;
 	opacity:1;
 }
-.pricing-sec   .carousel-control span{
+.pricing-sec   .carousel-control span, .btn-round span{
 	color: #c9cfd4;
 }
-.pricing-sec   .carousel-control:hover:before{
+.pricing-sec   .carousel-control:hover:before, .btn-round:hover:before{
 	content: "";
     width: 44px;
     height: 44px;
@@ -686,7 +686,7 @@ section.insight .overlay {
     box-shadow: -2px 0px 0px #f56b3c;
     left: 0px;
 }
-.pricing-sec   .carousel-control.right:hover:before{
+.pricing-sec   .carousel-control.right:hover:before, .btn-round.right:hover:before{
 	content: "";
     width: 44px;
     height: 44px;
@@ -695,7 +695,7 @@ section.insight .overlay {
     box-shadow: 2px 0px 0px #f56b3c;
     left: 0px;
 }
-.pricing-sec   .carousel-control:hover span{
+.pricing-sec   .carousel-control:hover span, .btn-round:hover span{
 	color: #f56b3e;
 }
 
@@ -784,6 +784,9 @@ section.insight .overlay {
 	left:45%;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
+.quot-icon img{
+	display:inline-block !important;
+}
 .testimonials-buttons-block{
 	width:100%;
 	margin-top:50px;
@@ -811,6 +814,10 @@ section.insight .overlay {
     text-align: left;
     margin: 10px 0; 
     color: #393c41;
+}
+
+.testi-slick{
+	margin-left:22px;
 }
 
 /*----------------------------------------
@@ -2060,12 +2067,18 @@ padding-bottom: 90px;
     line-height: 30px;
    
 }
-
-.footer-menu li{
-    font-size: 20px;
-    list-style-type: none;
-    line-height: 40px;
-    color: #fff;
+.footer-about{
+	margin-top:35px;
+	}
+.footer-menu li {
+	font-size: 20px;
+	list-style-type: none;
+	color: #fff;
+	margin-bottom: 25px;
+}
+.footer-menu li a{
+    font-size: 18px;
+    color: #acadb2 !important;
 }
 .location li {
     font-size: 20px;
@@ -2824,12 +2837,16 @@ h3.blog-title {
 /*-----------------------Footer-style-here-----------------------*/
 
 .footer{
-	background:#2d2f33;
+	background:url(../images/footer-bg.png) no-repeat #2d2f33;
 	padding:0px 0px 250px;
+	background-position:left bottom;
 }
 .footer-top{
 	margin-top:-100px;
 }
+.footer-link-area{
+	margin-top:170px;
+	}
 .footer-top-orange{
 	/*perspective: 320px;*/
 	transform:rotatey(-8deg) skew(-12deg, -3deg) scale(0.9, 0.9)
@@ -3095,7 +3112,7 @@ section.testimonial-area {
 }
 
 button.testi-nav-left.slick-arrow {
-  background-color: rgb( 93, 125, 234 );
+  /*background-color: rgb( 93, 125, 234 );*/
 }
 
 button.testi-nav-right.slick-arrow {
@@ -3105,9 +3122,9 @@ button.testi-nav-right.slick-arrow {
   background-color: rgb( 93, 125, 234 );
 }
  button.testi-nav-left.slick-arrow:hover{
-  background-image: -webkit-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
+ /* background-image: -webkit-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
-  -webkit-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;*/
   transition: all .3s ease-in;
 }
  button.testi-nav-right.slick-arrow:hover {
@@ -3215,6 +3232,9 @@ button.testi-nav-right.slick-arrow {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     display: none;
+}
+.slider-btns.testi{
+	display: block;;
 }
 
 
