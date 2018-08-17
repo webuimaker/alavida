@@ -420,6 +420,73 @@ dd, dt {
   background-color: transparent;
 }
 
+.navbar-info {
+    width: 100%;
+    
+    
+}
+.fixed-me{
+    transition: all 1s ;
+}
+
+.fixed-me{
+    background-color:#5f5b59 !important;
+    padding: 0px  !important;
+    margin-bottom: 5px;
+    position: fixed;
+    top:0;
+	z-index:888;
+    width: 100%;
+    border-bottom: 1px solid #494544 !important;
+    
+}
+
+.navbar-me {
+    
+   transition: all 1s ;
+}
+.header-right-menu{
+ padding: 5px 15px !important;   
+    
+}
+.site-logo{
+    padding: 15px 20px !important; 
+    margin: 15px 10px !important;
+}
+.navbar-me{
+    padding: 40px 0px;
+    background-color: transparent;
+    top: 0px;
+    border: 0px;
+    border-radius: 0px;
+	position:fixed;
+	width:100%;
+	z-index:999;
+}
+.navbar-collapse{
+    text-align: center;
+    border-top-width: 0px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.menu-collapsed-button{
+    margin: 20px 15px 10px 15px !important;
+}
+.navbar-nav > li > a.btn-call {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 5px;
+}
+.navbar-nav > li > a:hover {
+	color:#f56b3e !important;
+}
+section#banner{
+	padding-top:200px;
+}
 /* header area 2 */
 /*--------------------------------------------------*/
 
@@ -697,6 +764,10 @@ section.insight .overlay {
 }
 .pricing-sec   .carousel-control:hover span, .btn-round:hover span{
 	color: #f56b3e;
+}
+.btn-round.slick-arrow:before{
+	 width: 40px !important;
+    height: 40px !important;
 }
 
 .price-box{
@@ -1192,6 +1263,10 @@ iframe {
     box-shadow: 0 1px 1px 0 rgba(90,122,190,0.1), 0 10px 20px 0 rgba(90,122,190,0.2);
 
     transition-duration: 1s;
+}
+.service-1.blog:hover .blog-title{
+	color:#f56b3e;
+
 }
 .service-1:hover .unify{
 	color:#83c24a;
@@ -2051,11 +2126,35 @@ padding-bottom: 90px;
     margin-top: 25px;
 }
 .footer-top{
-    font-size: 25px;
+	background:url(../images/footer-top-bg.png) no-repeat;
+	background-size:100%;
+     margin-bottom: 20px;
+	padding:110px 70px 80px;
+}
+.footer-top .input-group .form-control{
+	border:0px;
+	box-shadow:none;
+	color:#fff;
+	background:transparent;
+}
+.footer-top .input-group .form-control::placeholder, .form-control::-webkit-input-placeholder{
+	color:#fff;
+}
+.newsletter-title{
+    font-size: 30px;
     color: #fff;
     font-weight: 600;
-
-     margin-bottom: 20px;
+}
+.email-input {
+	height: 50px !important;
+	background:#ff7e54;
+	color: white !important;
+	border:1px solid #ff8e69;
+}
+.btn-success {
+	color: #fff;
+	background-color: #83c24a;
+	border-color: #83c24a;
 }
 .footer-menu{
   padding:0px;
@@ -2079,6 +2178,9 @@ padding-bottom: 90px;
 .footer-menu li a{
     font-size: 18px;
     color: #acadb2 !important;
+}
+.footer-menu li a:hover{
+	color:#f56b3e !important;
 }
 .location li {
     font-size: 20px;
@@ -3099,7 +3201,7 @@ section.testimonial-area {
     height: 40px;
     display: inline-block;
     font-size: 20px;
-    line-height: 42px;
+    line-height: 38px;
     border: none;
     color: #fff;
     border-radius: 50%;
@@ -3119,7 +3221,7 @@ button.testi-nav-right.slick-arrow {
     position: absolute;
     left: auto;
     right: -70px;
-  background-color: rgb( 93, 125, 234 );
+  /*background-color: rgb( 93, 125, 234 );*/
 }
  button.testi-nav-left.slick-arrow:hover{
  /* background-image: -webkit-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
@@ -3128,8 +3230,8 @@ button.testi-nav-right.slick-arrow {
   transition: all .3s ease-in;
 }
  button.testi-nav-right.slick-arrow:hover {
-  background-image: -webkit-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
+ /* background-image: -webkit-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(93,125,234) 0%, rgb(41,173,249) 100%);*/
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 
@@ -3240,6 +3342,28 @@ button.testi-nav-right.slick-arrow {
 
 .testimonial-area:hover .slider-btns{
     display: block;
+}
+
+.social-link{
+	margin-top:70px;
+}
+.social-link li{
+	display:inline-block;
+	font-size:18px;
+}
+.social-link li:after{
+	height:2px;
+	width:38px;
+	background:#d0d2d6;
+	margin:4px 10px;
+	content:"";
+	display:inline-block;
+}
+.social-link li:last-child:after{
+	display:none;
+}
+.social-link li a:hover{
+	color:#f56b3e !important;
 }
 
 /*-----------------------20.sidebar-style-here-----------------------*/
@@ -3424,7 +3548,7 @@ ol {
     text-align: center;
 }
   .navbar-toggle {
-    top: 15px;
+    top: 0px;
   }
 
   .header_aera .navbar-header {
@@ -3574,7 +3698,7 @@ img.posi-r-img{
 @media (min-width: 767px) {
  .navbar-brand {
   
-    padding: 25px 15px !important;
+    padding: 15px 15px !important;
 }
 
 .video-img{
