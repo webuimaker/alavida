@@ -17,7 +17,7 @@
 
 			//active
 
-      $('.venobox').venobox();
+    
 
 
         $('.example-opensingle').beefup({
@@ -314,6 +314,8 @@
               }
           ]
         });
+		
+		  $('.venobox').venobox();
 	  
 	  
 	  
