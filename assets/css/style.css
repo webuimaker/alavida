@@ -2132,10 +2132,10 @@ padding-bottom: 90px;
 	padding:110px 70px 80px;
 }
 .footer-top .input-group .form-control{
-	border:0px;
-	box-shadow:none;
-	color:#fff;
-	background:transparent;
+	border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
 }
 .footer-top .input-group .form-control::placeholder, .form-control::-webkit-input-placeholder{
 	color:#fff;
