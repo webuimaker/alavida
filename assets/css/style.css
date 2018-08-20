@@ -3709,7 +3709,36 @@ img.posi-r-img{
 24.Responsive End
 (max-width: 480px) media query
 ------------------------------------*/
-
+@media (min-width: 768px) and (max-width: 991px) {
+/*SMALL DEVICE- iPad Protlat and old Desktop view*/
+	.footer-top{
+		padding: 30px 70px 31px;
+		text-align: center;
+	}
+	.footer-link-area {
+		margin-top: 50px;
+	}
+	.footer_dv{
+		text-align:center;
+	}
+	.footer-about {
+		margin-top: 15px;
+	}
+	.social-link {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.who_we_area.col-4pad{
+		padding-right: 1rem !important;
+		padding-left: 1rem !important;
+	}
+	.about_row{
+		margin-top:0px;
+	}
+	.about_row.py-40{
+		padding:0px;
+	}
+}
 
 
 
