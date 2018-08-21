@@ -484,6 +484,9 @@ dd, dt {
 .navbar-nav > li > a:hover {
 	color:#f56b3e !important;
 }
+.navbar-nav > li > a.btn-call.btn-green:hover{
+	color:#fff !important;
+}
 section#banner{
 	padding-top:200px;
 }
