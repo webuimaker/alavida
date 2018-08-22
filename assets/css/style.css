@@ -481,12 +481,7 @@ dd, dt {
 	padding-bottom: 10px;
 	margin-top: 5px;
 }
-.navbar-nav > li > a:hover {
-	color:#f56b3e !important;
-}
-.navbar-nav > li > a.btn-call.btn-green:hover{
-	color:#fff !important;
-}
+
 section#banner{
 	padding-top:200px;
 }
@@ -739,23 +734,27 @@ section.insight .overlay {
 	margin-top:20px;
 }
 .pricing-sec  .carousel-inner.pricing .item .price-area{
-	display:flex;
-	flex-wrap:wrap;	
-	align-items: center;
-	justify-content: center;
-	    flex-direction: column;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(441px - 120px);
 }
-
 .pricing-sec  .carousel-inner.pricing .item .price-area div{
-	
-	flex-grow:1;
-	 /*display: flex;
-	 flex-direction: column;*/
-	 padding: 20px;
-	 justify-content: space-between;
+	height: 33.3%;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
 }
  a.link{
 	color:#337ab7 !important;
+ }
+.pricing-sec  .carousel-inner.pricing .item .price-area div .link{
+	margin-right:5px;
+ }
+ .pricing-sec  .carousel-inner.pricing .item .price-area div small{
+	margin-right:5px;
  }
 .pricing-sec   .carousel-control, .btn-round{
 	width:44px;
@@ -1303,6 +1302,10 @@ iframe {
 .about_row{
   margin-top:100px;
 }
+.about_row  iframe html body .to-top-container{
+	display:none !important;
+}
+
 .mb_150{
   margin-bottom: 100px; 
 }
@@ -2202,7 +2205,7 @@ padding-bottom: 90px;
 	font-size: 20px;
 	list-style-type: none;
 	color: #fff;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 }
 .footer-menu li a{
     font-size: 18px;
@@ -2976,7 +2979,7 @@ h3.blog-title {
 	margin-top:-100px;
 }
 .footer-link-area{
-	margin-top:170px;
+	margin-top:100px;
 	}
 .footer-top-orange{
 	/*perspective: 320px;*/
@@ -3393,6 +3396,21 @@ button.testi-nav-right.slick-arrow {
 }
 .social-link li a:hover{
 	color:#f56b3e !important;
+}
+
+
+/*-------------------HUBSPOT Form*/
+.hbspt-form input{
+	height: 40px;
+    border-radius: 4px;
+}
+.hbspt-form .hs-input.invalid.error{
+	color: #a94442;
+    background-color: #f2dede;
+    border-color: #e89aa6;
+}
+.hbspt-form  input, .hbspt-form  select{
+	margin-bottom:5px;
 }
 
 /*-----------------------20.sidebar-style-here-----------------------*/

@@ -6,14 +6,17 @@
 	 });
 	 
 	 */
-
+$('.openmodal').click(function(){
+  $('#modalnew').modal('show');
+});
 
 (function ($) {
 	"use strict";
 
     jQuery(document).ready(function($){
 		
-		
+			
+
 
 			//active
 
