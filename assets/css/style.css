@@ -3404,14 +3404,94 @@ button.testi-nav-right.slick-arrow {
 	height: 40px;
     border-radius: 4px;
 }
+.hbspt-form label {
+    font-size: 15px;
+    color: #555;
+    font-weight: 300;
+    margin: 5px 0px;
+}
+.hbspt-form label  .hs-form-required{
+	color:#f56b3e;
+}
 .hbspt-form .hs-input.invalid.error{
-	color: #a94442;
-    background-color: #f2dede;
+	color: #a94442;   
     border-color: #e89aa6;
 }
 .hbspt-form  input, .hbspt-form  select{
 	margin-bottom:5px;
 }
+.hbspt-form .hs-error-msgs.inputs-list li  label{
+	color: #a94442; 
+	margin:0px;
+	font-size: 14px;
+}
+.hbspt-form .hs_submit  .hs-button {
+	width:auto;
+	background: #f56b3e ;
+    color: #fff;
+	border: 0px;
+    border-radius: 0px;
+}
+
+.hbspt-form .hs_submit .hs-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+        background:#83c24a !important;
+  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.hbspt-form .hs_submit .hs-button:hover{
+	color:fff;
+	transition: all 300ms linear 0s;
+	 background:#83c24a
+}
+.hbspt-form .hs_submit .hs-button:hover:before, .hbspt-form .hs_submit .hs-button:focus:before {
+    transform: scaleY(1);
+    color: #fff !important;
+    border-radius: 2px;
+}
+.hbspt-form .hs_submit  .actions{
+	text-align:right;
+}
+
+
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+  background:#fff;
+  transition-delay: .6s; 
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
 
 /*-----------------------20.sidebar-style-here-----------------------*/
 
