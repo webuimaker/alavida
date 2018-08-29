@@ -5,7 +5,7 @@
     color: #FFF
 }
 h1{font-size:34px;}
-
+.font16{font-size:16px;}
 /*----------------------------------
    1.Start button
 ------------------------------------*/
@@ -742,10 +742,13 @@ section.insight .overlay {
     height: calc(441px - 120px);
 }
 .pricing-sec  .carousel-inner.pricing .item .price-area div{
-	height: 33.3%;
-    vertical-align: middle;
-    align-items: center;
+	height: 15%;
+    align-items: flex-end;
     display: flex;
+}
+.pricing-sec  .carousel-inner.pricing .item .price-area div:first-child{
+	height: 70%;
+    align-items: center;
 }
  a.link{
 	color:#337ab7 !important;
